@@ -31,8 +31,12 @@ alias dstop="docker stop $(docker ps -a -q)"
 # Remove all containers
 alias drm="docker rm $(docker ps -a -q)"
 
+# Remove an Images
+dri() {
+  docker rmi $1
+}
 # Remove all images
-alias dri="docker rmi $(docker images -q)"
+alias drai="docker rmi $(docker images -q)"
 
 # Dockerfile build, e.g., $dbu tcnksm/test
 alias dbu="docker build -t=$1 ."
