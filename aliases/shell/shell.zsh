@@ -14,3 +14,5 @@ alias vrc='$EDITOR ~/.vimrc'
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+# Ask confirm when delete an directory
+alias rm='rm –I'
